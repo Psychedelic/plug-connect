@@ -35,7 +35,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@psychdelic/plug-connect",
+  "name": "@psychedelic/plug-connect",
   "author": "Psychedelic",
   "repository": {
     "type": "git",

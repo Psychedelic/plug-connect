@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Button from '../src';
+import Button, { DefaultButtonText } from '../src';
 
 const meta: Meta = {
   title: 'Plug',
@@ -18,6 +18,6 @@ export const PlugConnect = Template.bind({});
 
 PlugConnect.args = {
   dark: true,
-  title: 'Connect to Plug',
+  title: DefaultButtonText,
   onConnectCallback: () => console.log('Runs a callback'),
 };

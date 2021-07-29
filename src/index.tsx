@@ -42,13 +42,15 @@ const Button = styled('button', {
   },
 });
 
-const ConnectButton = ({
-  dark,
-  title,
+export const DefaultButtonText = "Connect to Plug";
+
+const PlugConnect = ({
+  dark = false,
+  title = DefaultButtonText,
   onConnectCallback,
 }: {
-  dark: boolean,
-  title: string,
+  dark?: boolean,
+  title?: string,
   onConnectCallback: (...args : any[]) => any,
 }) => {
   const handleConnect = async () => {
@@ -73,5 +75,5 @@ const ConnectButton = ({
   );
 };
 
-export default ConnectButton;
+export default PlugConnect;
 

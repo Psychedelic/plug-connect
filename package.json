@@ -35,8 +35,15 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "plug-connect",
-  "author": "Fleek",
+  "name": "@psychdelic/plug-connect",
+  "author": "Psychedelic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psychedelic/plug-connect.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@psychedelic"
+  },
   "module": "dist/plug-connect.esm.js",
   "size-limit": [
     {

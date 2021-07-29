@@ -3,7 +3,7 @@
 
 # Plug Connnect
 
-The Plug Connect button, is a basic React Component button you can use to integrate Plug's Agent features for authenticating a user's identity and requesting access to the Plug Agent to sign requests to your canisters on behalf of that identity.
+The Plug Connect button is a basic React Component button you can use to integrate Plug's Agent features for authenticating a user's identity and requesting access to the Plug Agent to sign requests to your canisters on behalf of that identity.
 
 ## 🤔 Installation
 

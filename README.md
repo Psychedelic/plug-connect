@@ -8,7 +8,7 @@ The Plug Connect button, is a basic React Component button you can use to integr
 ## 🤔 Installation
 
 ```
-npm install @psychedelic/plug-connect
+yarn add @psychedelic/plug-connect
 ```
 
 To install the package you need to be authenticated to Github via `npm login`, ensure that you have:
@@ -21,7 +21,35 @@ To install the package you need to be authenticated to Github via `npm login`, e
 npm login --registry=https://npm.pkg.github.com --scope=@Psychedelic
 ```
 
-## ⚠️ Requirements
+## 🎁 Use
+
+Import the PlugConnect package:
+
+```js
+import PlugConnect from '@psychedelic/plug-connect';
+```
+
+Use the component:
+
+```js
+<PlugConnect
+  onConnectCallback={() => console.log("Some callback")}
+/>
+```
+
+The props `dark` and `title` are also supported:
+
+```js
+<PlugConnect
+  dark
+  onConnectCallback={() => console.log("Some callback")}
+  title="My title"
+/>
+```
+
+Use the storybook as a playground to learn more!
+
+## ⚡ Development
 
 You'll need to have `nodejs` installed, NPM or [YARN](https://yarnpkg.com/) which is the preferred package manager throught this document, feel free to use [NPM](https://www.npmjs.com/) by changing the commands in accordance.
 
@@ -31,7 +59,7 @@ Pull the repository to your local and install the dependencies by:
 yarn install
 ```
 
-## ⚡ Development
+To start the development server:
 
 ```sh
 yarn start

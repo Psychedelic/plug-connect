@@ -13,7 +13,7 @@ yarn add @psychedelic/plug-connect
 
 To install the package you need to be authenticated to Github via `npm login`, ensure that you have:
 
-- A personal access token (create one [here]((https://github.com/settings/tokens))) with the `repo` and `read:packages` scopes to login to the [GitHub Package Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages).
+- A personal access token (create one [here](https://github.com/settings/tokens)) with the `repo` and `read:packages` scopes to login to the [GitHub Package Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages).
 
 - Have authenticated via `npm login`, using the **personal access token** as your **password**:
 

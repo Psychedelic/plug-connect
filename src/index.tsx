@@ -59,13 +59,13 @@ const PlugConnect = ({
 }) => {
   const handleConnect = async () => {
     
-    if(!window.ic?.plug){
+    if(!(window as any).ic?.plug){
       window.open('https://plugwallet.ooo/','_blank');
       return;
     }
     
     // @ts-ignore
-    const connected = await window?.ic?.plug?.requestConnect({
+    const connected = await (window as any)?.ic?.plug?.requestConnect({
       whitelist,
       host,
     });

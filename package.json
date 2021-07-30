@@ -48,11 +48,11 @@
   "size-limit": [
     {
       "path": "dist/plug-connect.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "11 KB"
     },
     {
       "path": "dist/plug-connect.esm.js",
-      "limit": "10 KB"
+      "limit": "11 KB"
     }
   ],
   "devDependencies": {

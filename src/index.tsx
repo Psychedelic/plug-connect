@@ -47,15 +47,22 @@ export const DefaultButtonText = "Connect to Plug";
 const PlugConnect = ({
   dark = false,
   title = DefaultButtonText,
+  whitelist = [],
+  host,
   onConnectCallback,
 }: {
   dark?: boolean,
   title?: string,
+  host?: string,
+  whitelist: string[],
   onConnectCallback: (...args : any[]) => any,
 }) => {
   const handleConnect = async () => {
     // @ts-ignore
-    const connected = await window?.ic?.plug?.requestConnect();
+    const connected = await window?.ic?.plug?.requestConnect({
+      whitelist,
+      host,
+    });
     
     if (!connected) return;
 
@@ -76,4 +83,3 @@ const PlugConnect = ({
 };
 
 export default PlugConnect;
-

@@ -28,9 +28,7 @@ Once you have those ready, run:
 npm login --registry=https://npm.pkg.github.com --scope=@Psychedelic
 ```
 
-!!! Note
-    
-    You only need to configure this once to install the package!
+> **Note:** You only need to configure this once to install the package!
     On npm login provide your Github email as your username and the Personal access token as the password.
 
 ## 🎁 Use

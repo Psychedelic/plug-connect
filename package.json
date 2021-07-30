@@ -55,12 +55,14 @@
       "limit": "11 KB"
     }
   ],
+  "dependencies": {
+    "@stitches/react": "^0.2.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@rollup/plugin-image": "^2.1.0",
     "@rollup/plugin-url": "^6.1.0",
     "@size-limit/preset-small-lib": "^5.0.2",
-    "@stitches/react": "^0.2.3",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^6.3.6",

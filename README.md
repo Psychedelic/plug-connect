@@ -45,19 +45,24 @@ Use the component:
 
 ```js
 <PlugConnect
+  whitelist={['canisterid-1', 'canisterid-2']}
   onConnectCallback={() => console.log("Some callback")}
 />
 ```
 
-The props `dark` and `title` are also supported:
+The props `dark`, `host` and `title` are also supported:
 
 ```js
 <PlugConnect
   dark
-  onConnectCallback={() => console.log("Some callback")}
   title="My title"
+  host="host-example"
+  whitelist={['canisterid-1', 'canisterid-2']}
+  onConnectCallback={() => console.log("Some callback")}
 />
 ```
+
+> **Note:** `host` defaults to `https://mainnet.dfinity.network` and `whitelist` defaults to an empty list
 
 Use the storybook as a playground to learn more!
 

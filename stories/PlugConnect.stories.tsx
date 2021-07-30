@@ -19,5 +19,6 @@ export const PlugConnect = Template.bind({});
 PlugConnect.args = {
   dark: true,
   title: DefaultButtonText,
+  whitelist: ['canister-1', 'canister-2'],
   onConnectCallback: () => console.log('Runs a callback'),
 };

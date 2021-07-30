@@ -37,7 +37,7 @@ You can also setup your npm global settings to fetch from the Github registry ev
 
 Start by setting your project to fetch **@Psychdelic** packages from the correct registry, if you haven't [setup](https://docs.npmjs.com/configuring-your-registry-settings-as-an-npm-enterprise-user) your npm globals to do this automatically you need an `npmrc` file.
 
-Create the `.npmrc` by:
+Create the `.npmrc` in the root of your project by:
 
 ```sh
 touch .npmrc

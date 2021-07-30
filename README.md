@@ -31,9 +31,25 @@ npm login --registry=https://npm.pkg.github.com --scope=@Psychedelic
 > **Note:** You only need to configure this once to install the package!
     On npm login provide your Github email as your username and the Personal access token as the password.
 
+You can also setup your npm global settings to fetch from the Github registry everytime it finds a **@Psychdelic** package, find the instructions [here](https://docs.npmjs.com/configuring-your-registry-settings-as-an-npm-enterprise-user).
+
 ## 🎁 Use
 
-Import the PlugConnect package:
+Start by setting your project to fetch **@Psychdelic** packages from the correct registry, if you haven't [setup](https://docs.npmjs.com/configuring-your-registry-settings-as-an-npm-enterprise-user) your npm globals to do this automatically you need an `npmrc` file.
+
+Create the `.npmrc` by:
+
+```sh
+touch .npmrc
+```
+
+Open the file and put the following content:
+
+```sh
+@psychedelic:registry=https://npm.pkg.github.com
+```
+
+You can now import the PlugConnect package:
 
 ```js
 import PlugConnect from '@psychedelic/plug-connect';

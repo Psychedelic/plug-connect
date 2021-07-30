@@ -108,6 +108,38 @@ yarn storybook
 
 This loads the stories from `./stories`.
 
+## Contributing
+
+Create branches from the `main` branch and name it in accordance to the [conventions](https://www.conventionalcommits.org/en/v1.0.0/) below - look for the types listed below.
+
+```
+💍 test: Adding missing tests
+🎸 feat: A new feature
+🐛 fix: A bug fix
+🤖 chore: Build process or auxiliary tool changes
+✏️ docs: Documentation only changes
+💡 refactor: A code change that neither fixes a bug or adds a feature
+💄 style: Markup, white-space, formatting, missing semi-colons...
+```
+
+For example,
+
+```
+git checkout main
+
+git checkout -b test/a-test-scenario
+
+git commit -m 'test: verified X equals Z when Foobar'
+
+git commit -m 'refactor: input value changes'
+```
+
+Once complete, push to origin and create a new PR -> main, use the naming convention above, such as for a new PR named `test: some scenario` or `fix: scenario amend X`.
+
+When approved, make sure you have `rebased` to latest and fix any issues and don't merge any conflicts or cause any regressions.
+
+To finish, you'll Squash and merge!
+
 ## Repo
 
 [TSDX](https://tsdx.io/) - Zero-config CLI for TypeScript used by this repo. 

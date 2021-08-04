@@ -11,8 +11,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ['14.x']
-        os: [ubuntu-latest]
+        node: ['10.x', '12.x', '14.x']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
       - name: Checkout repo
@@ -31,3 +31,6 @@ jobs:
 
       - name: Test
         run: yarn test --ci --coverage --maxWorkers=2
+
+      - name: Build
+        run: yarn build

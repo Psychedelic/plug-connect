@@ -75,6 +75,7 @@
     "babel-loader": "^8.2.2",
     "cssnano": "^5.0.7",
     "husky": "^7.0.1",
+    "jest-transform-stub": "^2.0.0",
     "jss": "^10.7.1",
     "postcss": "^8.3.6",
     "react": "^17.0.2",

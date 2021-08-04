@@ -9,6 +9,11 @@ const Button = styled('button', {
   padding: '2px',
   borderRadius: '10px',
   cursor: 'pointer',
+  transition: 'transform 0.3s',
+
+  '&:hover': {
+    transform: 'scale(1.03)',
+  },
 
   '& > div': {
     display: 'flex',

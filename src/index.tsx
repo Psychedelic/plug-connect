@@ -53,13 +53,15 @@ const PlugConnect = ({
   dark = false,
   title = DefaultButtonText,
   whitelist = [],
+  timeout = 120000,
   host,
   onConnectCallback,
 }: {
   dark?: boolean,
   title?: string,
   host?: string,
-  whitelist: string[],
+  whitelist?: string[],
+  timeout?: number,
   onConnectCallback: (...args : any[]) => any,
 }) => {
   const handleConnect = async () => {
@@ -68,11 +70,11 @@ const PlugConnect = ({
       window.open('https://plugwallet.ooo/','_blank');
       return;
     }
-    
     // @ts-ignore
     const connected = await (window as any)?.ic?.plug?.requestConnect({
       whitelist,
       host,
+      timeout,
     });
     
     if (!connected) return;

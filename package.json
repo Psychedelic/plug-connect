@@ -1,4 +1,7 @@
 {
+  "name": "@psychedelic/plug-connect",
+  "author": "Psychedelic",
+  "description": "Connect button for the plug wallet extension",
   "version": "0.1.4",
   "license": "GPL-3.0",
   "main": "dist/index.js",
@@ -35,8 +38,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@psychedelic/plug-connect",
-  "author": "Psychedelic",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Psychedelic/plug-connect.git"

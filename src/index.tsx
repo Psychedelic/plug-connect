@@ -1,7 +1,7 @@
 import React from 'react';
 import { styled } from '@stitches/react';
 import { Provider, WalletConnectRPC } from '@psychedelic/plug-inpage-provider';
-import { isAndroid } from '@walletconnect/browser-utils';
+import { isMobile } from '@walletconnect/browser-utils';
 
 import plugLight from './assets/plugLight.svg';
 import plugDark from './assets/plugDark.svg';
@@ -60,6 +60,7 @@ const PlugConnect = ({
   timeout = 120000,
   host,
   onConnectCallback,
+  debug = true,
 }: {
   dark?: boolean;
   title?: string;
@@ -67,14 +68,15 @@ const PlugConnect = ({
   whitelist?: string[];
   timeout?: number;
   onConnectCallback: (...args: any[]) => any;
+  debug?: boolean;
 }) => {
   const handleConnect = async () => {
     if (!(window as any).ic?.plug) {
-      if (!isAndroid()) {
+      if (!isMobile()) {
         window.open('https://plugwallet.ooo/', '_blank');
         return;
       }
-      const clientRPC = new WalletConnectRPC(window);
+      const clientRPC = new WalletConnectRPC({ window, debug });
 
       const plugProvider = new Provider(clientRPC);
 

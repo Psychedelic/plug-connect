@@ -1613,10 +1613,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
   integrity sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==
 
-"@psychedelic/plug-inpage-provider@2.3.0-alpha.6":
-  version "2.3.0-alpha.6"
-  resolved "https://npm.pkg.github.com/download/@Psychedelic/plug-inpage-provider/2.3.0-alpha.6/62fde4450fe1732195e871335eadceff47ebf8ca#62fde4450fe1732195e871335eadceff47ebf8ca"
-  integrity sha512-OMtMMg0/RuTgfz4EaT1eIzQ9KBJE4CRXiosC3NlKLEblwyZgf0m7uL+O6CFqweEnMJMmbJ03eKuFqyn0cjpGMQ==
+"@psychedelic/plug-inpage-provider@2.4.0":
+  version "2.4.0"
+  resolved "https://npm.pkg.github.com/download/@Psychedelic/plug-inpage-provider/2.4.0/8f568657863c3264d6ed4e7eb9fe41f9852387ad#8f568657863c3264d6ed4e7eb9fe41f9852387ad"
+  integrity sha512-hvcHlMxoBPWsu7ZXLivC9QqbMFfV6SnqyOCNM1O7xPmejw2Ypz8rpb8ypTvcuk/uIv+vQ4dAQdEf8rESbCITfw==
   dependencies:
     "@dfinity/agent" "0.9.3"
     "@dfinity/candid" "0.9.3"

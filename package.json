@@ -2,7 +2,7 @@
   "name": "@psychedelic/plug-connect",
   "author": "Psychedelic",
   "description": "Connect button for the plug wallet extension",
-  "version": "0.2.0-alpha.2",
+  "version": "0.2.0",
   "license": "GPL-3.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -57,7 +57,7 @@
     }
   ],
   "dependencies": {
-    "@psychedelic/plug-inpage-provider": "2.3.0-alpha.6",
+    "@psychedelic/plug-inpage-provider": "2.4.0",
     "@stitches/react": "^0.2.3",
     "@walletconnect/browser-utils": "^1.7.8"
   },

@@ -36,7 +36,7 @@ jobs:
               elif [ "$RUNNER_OS" == "macOS" ]; then
                     echo "//npm.pkg.github.com/:_authToken=$PSYCHEDELIC_ORG_NPM_PKG_TOKEN" >> .npmrc
               elif [ "$RUNNER_OS" == "Windows" ]; then
-                    echo://npm.pkg.github.com/:_authToken=%PSYCHEDELIC_ORG_NPM_PKG_TOKEN% > .npmrc
+                    echo:"//npm.pkg.github.com/:_authToken=%PSYCHEDELIC_ORG_NPM_PKG_TOKEN%" > .npmrc
               else
                     echo "$RUNNER_OS not supported"
                     exit 1

@@ -57,7 +57,7 @@
     }
   ],
   "dependencies": {
-    "@psychedelic/plug-inpage-provider": "2.4.0",
+    "@psychedelic/plug-inpage-provider": "2.4.1",
     "@stitches/react": "^0.2.3",
     "@walletconnect/browser-utils": "^1.7.8"
   },

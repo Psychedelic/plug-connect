@@ -29,9 +29,6 @@ jobs:
       - name: Grant packages read
         run: echo "//npm.pkg.github.com/:_authToken=$PSYCHEDELIC_ORG_NPM_PKG_TOKEN" >> .npmrc
         shell: bash
-      
-      - name: Test NPMRC
-        run: cat .npmrc
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
